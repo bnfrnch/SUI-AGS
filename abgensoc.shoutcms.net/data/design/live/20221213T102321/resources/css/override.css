@@ -182,7 +182,8 @@
  blockquote {
      color: var(--grey-dark);
      font-size: var(--font_size-large);
-     padding: var(--spacing-large);
+     line-height: var(--line_height);
+     padding: var(--spacing) var(--spacing-large);
      margin: var(--spacing-large) 0;
      border-left: 3px solid var(--primary);
  }
@@ -1549,6 +1550,7 @@ List Item Meta Information
  .list-item-datum-title a {
      color: var(--primary);
      font-size: var(--font_size-large);
+     font-weight: var(--font_weight-normal) !important;
      transition: 0.2s;
      -webkit-transition: 0.2s;
      -moz-transition: 0.2s;
@@ -2829,7 +2831,7 @@ Side Columns
      width: 100%;
      position: absolute;
      display: block;
-     z-index: 1;
+     z-index: 0;
      margin-top: -158px;
  }
 
@@ -2847,15 +2849,15 @@ Side Columns
  }
 
  .footer-mid {
-     color: #557590;
+     color: var(--primary-dark);
      font-size: .9em;
-     background: url(../images/footer-bottom-bg.jpg) no-repeat 147px 0;
+     /* background: url(../images/footer-bottom-bg.jpg) no-repeat 147px 0; */
      min-height: 198px;
      height: 100%;
  }
 
  .footer-title {
-     color: #00a7b3;
+     color: var(--primary);
      font-weight: 800;
      padding-bottom: 15px;
  }
