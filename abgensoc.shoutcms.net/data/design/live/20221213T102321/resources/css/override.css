@@ -1582,6 +1582,7 @@ List Item Meta Information
      font-weight: var(--font_weight-bold) !important;
      letter-spacing: normal;
      text-decoration: underline;
+     background: transparent;
  }
 
  /* List Item SKU */
@@ -1592,7 +1593,7 @@ List Item Meta Information
      font-size: var(--font_size-smaller);
  }
 
- /* List Item Pirce */
+ /* List Item Price */
 
  .product-price {
      color: var(--secondary);
