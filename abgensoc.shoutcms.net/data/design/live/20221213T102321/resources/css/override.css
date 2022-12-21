@@ -10,24 +10,24 @@
 
  :root {
      /* Colours */
-     --primary-darker: #081A21;
-     --primary-dark: #0B2832;
-     --primary: #123F4F;
-     --primary-light: #227796;
-     --primary-lighter: #7AC5E1;
-     --primary-lightest: #DEF1F7;
-     --secondary-darker: #1A1F0A;
-     --secondary-dark: #343D14;
-     --secondary: #49561D;
-     --secondary-light: #819933;
-     --secondary-lighter: #CBDB94;
-     --secondary-lightest: #E9F0D1;
-     --tertiary-darker: #3E2314;
-     --tertiary-dark: #6C3E23;
-     --tertiary: #864C2B;
-     --tertiary-light: #E7C59A;
-     --tertiary-lighter: #F3E3CD;
-     --tertiary-lightest: #F7ECDE;
+     --primary-darker: #141929;
+     --primary-dark: #222B44;
+     --primary: #2A3555;
+     --primary-light: #4A5D96;
+     --primary-lighter: #8494C2;
+     --primary-lightest: #D6DBEB;
+     --secondary-darker: #2F3732;
+     --secondary-dark: #4B584F;
+     --secondary: #5A695F;
+     --secondary-light: #86988C;
+     --secondary-lighter: #B2BDB5;
+     --secondary-lightest: #E9ECEA;
+     --tertiary-darker: #51332A;
+     --tertiary-dark: #6C4537;
+     --tertiary: #855545;
+     --tertiary-light: #AC715D;
+     --tertiary-lighter: #BA8978;
+     --tertiary-lightest: #EADCD7;
      /* Greys */
      --black: #111111;
      --grey-darker: #3D3D3D;
@@ -131,31 +131,31 @@
  }
 
  h1 {
-     color: var(--primary-dark);
+     color: var(--primary);
      font-size: clamp(3.4rem, calc(3.4rem + ((1vw - 0.48rem) * 0.8333)), 4rem);
      font-weight: var(--font_weight-normal);
  }
 
  h2 {
-     color: var(--primary-dark);
+     color: var(--tertiary);
      font-size: clamp(2.8rem, calc(2.8rem + ((1vw - 0.48rem) * 0.8333)), 3.4rem);
      font-weight: var(--font_weight-normal);
  }
 
  h3 {
-     color: var(--primary-dark);
+     color: var(--secondary);
      font-size: clamp(2rem, calc(2rem + ((1vw - 0.48rem) * 0.8333)), 2.6rem);
      font-weight: var(--font_weight-normal);
  }
 
  h4 {
-     color: var(--primary-dark);
+     color: var(--primary);
      font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.48rem) * 0.5556)), 2.2rem);
      font-weight: var(--font_weight-normal);
  }
 
  h5 {
-     color: var(--secondary);
+     color: var(--primary-light);
      font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.48rem) * 0.5556)), 2rem);
      font-weight: var(--font_weight-normal);
  }
@@ -199,7 +199,7 @@
  p a,
  .editor-content li a {
      font-size: inherit !important;
-     color: var(--primary) !important;
+     color: var(--primary-light) !important;
      text-decoration: underline;
  }
 
@@ -353,8 +353,7 @@
 
  .editor-content ul>li {
      position: relative;
-     display: grid;
-     grid-template-columns: 6px auto;
+     display: flex;
      align-items: flex-start;
      gap: var(--spacing);
  }
@@ -473,7 +472,7 @@ Buttons
  a.sui-sf-c-btn.sui-sf-c-btn--default:hover {
      color: var(--white) !important;
      background-color: transparent !important;
-     border-color: var(--primary-dark) !important;
+     border-color: var(--primary-darker) !important;
  }
 
  a.sui-sf-c-btn.sui-sf-c-btn--default::before {
@@ -495,7 +494,7 @@ Buttons
  }
 
  a.sui-sf-c-btn.sui-sf-c-btn--default:hover::before {
-     background-color: var(--primary-dark);
+     background-color: var(--primary-darker);
      animation: slide-in ease 0.6s;
      -webkit-animation: slide-in ease 0.6s;
      transform: scaleX(1);
@@ -655,7 +654,7 @@ Buttons
 
  a.sui-sf-c-btn.sui-sf-c-btn--link:hover {
      gap: 12px;
-     color: var(--primary) !important;
+     color: var(--primary-light) !important;
      background-color: transparent !important;
      border: none !important;
  }
@@ -667,7 +666,7 @@ Buttons
  a.sui-sf-c-btn.sui-sf-c-btn--link::after {
      position: relative;
      content: '\f0da';
-     color: var(--primary);
+     color: var(--primary-light);
      font-family: 'Font Awesome 5 Pro';
      font-size: inherit;
      width: fit-content;
@@ -919,7 +918,7 @@ Top Bar
 
  .top-site-bar {
      padding: var(--spacing-tight) 0 !important;
-     background-color: var(--primary-lightest);
+     background-color: var(--secondary-lightest);
  }
 
  /* Top Site Bar Account Links */
@@ -930,7 +929,7 @@ Top Bar
 
  .top-site-bar .nav-links a,
  .top-site-bar .nav-links .store-microcart * {
-     color: var(--primary);
+     color: var(--secondary-darker);
      font-size: var(--font_size-smaller);
      font-weight: var(--font_weight-normal);
      text-transform: capitalize;
@@ -1470,11 +1469,11 @@ Primary Navigation
  }
 
  table.col_content.col-2.link_cta--dark>tbody>tr>td>p>a.sui-sf-c-btn--link:hover {
-     color: var(--primary-lighter) !important;
+     color: var(--primary-lightest) !important;
  }
 
  table.col_content.col-2.link_cta--dark>tbody>tr>td>p>a.sui-sf-c-btn--link::after {
-     color: var(--primary-lighter) !important;
+     color: var(--primary-lightest) !important;
  }
 
  table.col_content.col-2.link_cta--dark>tbody>tr>td>p>a.sui-sf-c-btn--default::before {
